@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<!-- CustomCSS -->
+		<link rel="stylesheet" href="./css/custom_blue.css">
+
+		<title>Mission (K)IMpossible</title>
+	</head>
+	<body>		
+		<main class="container" role="main">
+			<nav class="navbar navbar-custom" >
+				<div>
+					<h6>Die Abenteuer von KIM & TIM</h6>
+					<h4>Kapt. I – Mission (K)IMpossible</h4>					
+				</div>
+				
+				<img width="15%" src="./img/logo.svg"</img>								
+			</nav>
+		
+			<div class="container" >
+				<p><h3>Aufgabe 02</h3></p>
+				
+				<div class="card" >
+				<div class="card-header">
+					<b>Fax Flut in der Stadt</b>
+				</div>
+				<h5 class="card-title"></h5>
+				<br>
+					<p>Wie soll ich meinen Computer entsperren, wenn die Katze den Zettel des Wissens mit den Passwörtern abgekratzt hat... Mal schauen, vielleicht finde ich die Info ja irgendwo in der Wohnung...</p>
+					<br>
+
+					<img class="rounded mx-auto d-block card-img-top" style="width: 80%;" src="./img/login.gif" id="computer">
+				
+					<div class="card-body" style="text-align: justify ">
+						<p class="card-text">	
+							<center>								
+								<input type="password" id="passwordInput" placeholder="Passwort eingeben">
+								<button type="button" class="btn btn-primary" id="enter" onclick="entschluesselnBild()">Entschlüsseln</button>
+							<br><br>
+							  								
+							</center>
+						</p>
+					</div>
+				</div>
+		</main>
+		
+	
+		<script>
+			function entschluesselnBild() {
+				var passwort = document.getElementById("passwordInput").value;
+				var pruefung = caesarPruefung(passwort, 3); // Prüfung mit Caesar-Chiffre um 3 verschoben
+	
+				if (pruefung) {
+					document.getElementById("computer").src = "./img/computer.png";
+					document.getElementById("computer").style.display = "block";
+				} else {
+					alert("Falsches Passwort. Zugriff verweigert.");
+				}
+			}	
+
+			function caesarPruefung(passwort, verschluesselung) {
+				
+				// Die Caesar-Chiffre Funktion
+				function caesarChiffre(str, num) {
+					num = num % 26;
+					var lowercaseString = str.toLowerCase();
+					var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+					var verschluesselteString = '';
+
+					for (var i = 0; i < lowercaseString.length; i++) {
+						var aktuellerBuchstabe = lowercaseString[i];
+						if (aktuellerBuchstabe === ' ') {
+							verschluesselteString += aktuellerBuchstabe;
+							continue;
+						}
+						var aktuellerIndex = alphabet.indexOf(aktuellerBuchstabe);
+						var newIndex = aktuellerIndex + num;
+						if (newIndex > 25) newIndex = newIndex - 26;
+						if (newIndex < 0) newIndex = newIndex + 26;
+						if (str[i] === str[i].toUpperCase()) {
+							verschluesselteString += alphabet[newIndex].toUpperCase();
+						}
+						else verschluesselteString += alphabet[newIndex];
+					}
+
+					return verschluesselteString;
+				}
+				var withNoDigits = passwort.replace(/[0-9]/g, '');
+
+				return caesarChiffre(withNoDigits, 3) === 'kim1';
+			}
+
+							
+
+		</script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh6U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>

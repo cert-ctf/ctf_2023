@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<!-- CustomCSS -->
+		<link rel="stylesheet" href="./css/custom_blue.css">
+
+		<title>Mission (K)IMpossible</title>
+	</head>
+	<body>		
+		<main class="container" role="main">
+			<nav class="navbar navbar-custom" >
+				<div>
+					<h6>Die Abenteuer von KIM & TIM</h6>
+					<h4>Kapt. I – Mission (K)IMpossible</h4>					
+				</div>
+				
+				<img width="15%" src="./img/logo.svg"</img>								
+			</nav>
+		
+
+			<div class="container" >
+				<p><h3>Aufgabe 07</h3></p>
+				<br>				
+				
+				<div class="card" >
+				<div class="card-header">
+					<b>Python Troll</b>
+				</div>
+				<br>
+					<p>Guten Tag. Sie haben also von unseren Wartungsarbeiten für den TV-Laden gehört? Aber bitte behalten Sie es für sich, da diese Arbeiten vom Administrator durchgeführt wurden, der bereits gekündigt wurde. Da wir selber die Passwörter nicht ändern können... sind es immer noch die gleichen wie vorher...
+					<p>Übrigens, unsere Faxgerät wurden vor kurzem im neu eröffneten Fax-Laden erworben. Allerdings stimmt damit irgendetwas nicht... </p>
+
+				<hr>
+					<p>
+						<code><pre>
+def character_shift(text, shift):
+    shifted_text = ""
+    for char in text:
+        if char.isalpha():
+            shifted = chr(((ord(char) - 65 + shift) % 26) + 65) if char.isupper() else chr(((ord(char) - 97 + shift) % 26) + 97)
+            shifted_text += shifted
+        else:
+            shifted_text += char
+    return shifted_text
+
+n = 100
+
+ascii_art = '''
+ ______   ______     ______     __         __        
+/\__  _\ /\  == \   /\  __ \   /\ \       /\ \       
+\/_/\ \/ \ \  __<   \ \ \/\ \  \ \ \____  \ \ \____  
+   \ \_\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\ 
+    \/_/   \/_/ /_/   \/_____/   \/_____/   \/_____/
+'''
+
+flag_base = "vlhehqdfkwguhlvlhehq"  
+shift_amount = -3  
+
+# Verschlüsselung der Flaggen-Basis
+encrypted_flag_base = character_shift(flag_base, shift_amount)
+
+# Schleife zur Ausgabe
+for i in range(1, n + 1):
+    if i == 0:
+        print("Flag: " + encrypted_flag_base)
+        break
+    print(ascii_art)</pre>
+						</code>
+
+					</p>													
+				<br>
+				<p>Versuche Dein Glück mit dem <a href="https://www.online-python.com/caPe7jQrUC" target="_blank">Online Python Editor</a></p>											
+		</main>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh6U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>

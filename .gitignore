@@ -8,6 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+backup
+img_work
+python
 dist
 dist-ssr
 *.local

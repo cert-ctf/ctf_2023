@@ -177,7 +177,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https://play.workadventu.re/@/gematik/kim_ti/team_10_flat"
+                 "value":"https://play.workadventu.re/@/gematik/kim_ti/team_10_city"
                 }],
          "type":"tilelayer",
          "visible":true,

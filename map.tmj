@@ -3254,7 +3254,7 @@
         {
          "columns":16,
          "firstgid":2883,
-         "image":"tilesets\/tileset_mainmap\/balloon.png",
+         "image":"tilesets\/tileset_event\/balloon.png",
          "imageheight":480,
          "imagewidth":528,
          "margin":0,

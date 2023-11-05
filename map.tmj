@@ -57654,7 +57654,7 @@
     {
       "columns": 16,
       "firstgid": 1,
-      "image": "map-chunk-1-81bab903.png",
+      "image": "map-chunk-1-1569e78f.png",
       "imageheight": 512,
       "imagewidth": 512,
       "margin": 0,
@@ -57841,7 +57841,7 @@
     {
       "columns": 16,
       "firstgid": 256,
-      "image": "map-chunk-2-81bab903.png",
+      "image": "map-chunk-2-1569e78f.png",
       "imageheight": 512,
       "imagewidth": 512,
       "margin": 0,
@@ -58533,7 +58533,7 @@
     {
       "columns": 15,
       "firstgid": 512,
-      "image": "map-chunk-3-81bab903.png",
+      "image": "map-chunk-3-1569e78f.png",
       "imageheight": 480,
       "imagewidth": 480,
       "margin": 0,

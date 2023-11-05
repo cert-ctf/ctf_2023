@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 backup
 img_work
+UPDATE
 python
 dist
 dist-ssr

@@ -105,7 +105,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":100,
          "id":9,
-         "name":"collision",
+         "name":"collisions",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -2356,6 +2356,32 @@
  "nextlayerid":12,
  "nextobjectid":146,
  "orientation":"orthogonal",
+ "properties":[
+        {
+         "name":"mapCopyright",
+         "type":"string",
+         "value":"Credits: WorkAdventure (https:\/\/WorkAdventu.re) \nLicense: CC-BY-SA 3.0 (http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/)"
+        }, 
+        {
+         "name":"mapDescription",
+         "type":"string",
+         "value":"A perfect virtual office to get started with WorkAdventure!"
+        }, 
+        {
+         "name":"mapImage",
+         "type":"string",
+         "value":"map.png"
+        }, 
+        {
+         "name":"mapName",
+         "type":"string",
+         "value":"Event"
+        }, 
+        {
+         "name":"script",
+         "type":"string",
+         "value":"src\/main.ts"
+        }],
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
  "tileheight":32,

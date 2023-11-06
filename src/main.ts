@@ -4,49 +4,12 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
-
-async function extendedFeatures() {
-    try {
-        await bootstrapExtra()
-        console.log('Scripting API Extra loaded successfully');
-
-        	// Place the countdown GIF inside of the cinema screen
-			try{
-				const countdown = await WA.room.website.get('cinemaScreen');
-				countdown.x = 2432;
-				countdown.y = 128;
-				countdown.width = 418;
-				countdown.height = 226;
-			}catch(err){
-				console.error(err);
-			}
-			
-			// Place the countdown GIF inside of the cinema screen
-			try{
-				const countdown = await WA.room.website.get('tvScreen');
-				countdown.x = 387;
-				countdown.y = 328;
-				countdown.width = 70;
-				countdown.height = 40;
-			}catch(err){
-				console.error(err);
-			}
-			
-		} catch (error) {
-			console.error('Scripting API Extra ERROR',error);
-		}
-	}
-    
-
+let currentPopup: any = undefined;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-	extendedFeatures();
     console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
-	
-	
-
+    //console.log('Player tags: ',WA.player.tags)
 	
 	// Mirror show Duke
 	WA.room.area.onEnter('Mirror_Duke').subscribe(() => {
@@ -121,5 +84,11 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
+function closePopup(){
+    if (currentPopup !== undefined) {
+        currentPopup.close();
+        currentPopup = undefined;
+    }
+}
 
 export {};

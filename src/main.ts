@@ -11,8 +11,7 @@ WA.onInit().then(() => {
     //console.log('Player tags: ',WA.player.tags)
 	
 	// Mirror show Duke
-	WA.room.area.onEnter('Mirror_Duke').subscribe(() => {
-		console.log("HELLO DUKE")
+	WA.room.area.onEnter('Mirror_Duke').subscribe(() => {		
 		WA.room.showLayer("decoration/mirror_duke");		
 	})
 	
@@ -22,59 +21,50 @@ WA.onInit().then(() => {
 
 	// HiFi Room
 	WA.room.area.onEnter('HiFi_Room').subscribe(() => {
-		WA.room.hideLayer("above/Roofs/HiFi_roof");		
+		WA.room.hideLayer("HiFi_roof");		
 	})
 	
 	WA.room.area.onLeave('HiFi_Room').subscribe(() => {
-		WA.room.showLayer("above/Roofs/HiFi_roof");
+		WA.room.showLayer("HiFi_roof");
 	}) 
 	
 	// Praxis_1 Room
 	WA.room.area.onEnter('Praxis_1_Room').subscribe(() => {
-		WA.room.hideLayer("above/Roofs/Praxis_1_roof");		
+		WA.room.hideLayer("Praxis_1_roof");		
 	})
 	
 	WA.room.area.onLeave('Praxis_1_Room').subscribe(() => {
-		WA.room.showLayer("above/Roofs/Praxis_1_roof");		
+		WA.room.showLayer("Praxis_1_roof");		
 	}) 
 	
 	// Praxis_2 Room
 	WA.room.area.onEnter('Praxis_2_Room').subscribe(() => {
-		WA.room.hideLayer("above/Roofs/Praxis_2_roof");		
+		WA.room.hideLayer("Praxis_2_roof");		
 	})
 	
 	WA.room.area.onLeave('Praxis_2_Room').subscribe(() => {
-		WA.room.showLayer("above/Roofs/Praxis_2_roof");		
+		WA.room.showLayer("Praxis_2_roof");		
 	}) 
 	
 	// Fax Room
 	WA.room.area.onEnter('Fax_Room').subscribe(() => {
-		WA.room.hideLayer("above/Roofs/Fax_roof");		
-		WA.room.hideLayer("above/Roofs/Fax_sign");	
+		WA.room.hideLayer("Fax_roof");		
 	})
 	
 	WA.room.area.onLeave('Fax_Room').subscribe(() => {
-		WA.room.showLayer("above/Roofs/Fax_roof");		
-		WA.room.showLayer("above/Roofs/Fax_sign");	
+		WA.room.showLayer("Fax_roof");		
 	}) 
 	
 	// Bus Room
 	WA.room.area.onEnter('Bus_Room').subscribe(() => {
-		WA.room.hideLayer("above/Roofs/Bus_Station_roof");		
-		WA.room.hideLayer("above/Roofs/Bus_Station_sign");	
+		WA.room.hideLayer("Bus_Station_roof");		
 	})
 	
 	WA.room.area.onLeave('Bus_Room').subscribe(() => {
-		WA.room.showLayer("above/Roofs/Bus_Station_roof");		
-		WA.room.showLayer("above/Roofs/Bus_Station_sign");	
+		WA.room.showLayer("Bus_Station_roof");		
 	}) 
 	
-	
- 
- 
- 
- 
- 
+
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {

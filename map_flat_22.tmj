@@ -177,7 +177,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"map_city.tmj"
+                 "value":"https://play.workadventu.re/@/gematik/kim_ti/team_22_city"
                 }],
          "type":"tilelayer",
          "visible":true,

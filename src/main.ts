@@ -64,6 +64,19 @@ WA.onInit().then(() => {
 		WA.room.showLayer("Bus_Station_roof");		
 	}) 
 	
+	// Tim CarCinema
+	WA.room.area.onEnter('tim_01').subscribe(() => {
+		WA.room.setTiles([		
+		  { x: 76, y: 12, tile: "tim", layer: "Stuff_6" },
+		]);	
+	})
+	
+	WA.room.area.onLeave('tim_01').subscribe(() => {
+		WA.room.setTiles([		
+		  { x: 76, y: 12, tile: null, layer: "Stuff_6" },
+		]);	
+	}) 
+	
 
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure

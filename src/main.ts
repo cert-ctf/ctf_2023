@@ -106,27 +106,7 @@ WA.onInit().then(() => {
 	
 	
 	//POPUPS---------------------------------------------------------------------------
-	
-	let helloWorldPopup;
-
-	// Open the popup when we enter a given zone
-	WA.room.onEnterLayer("tim_cinema").subscribe(() => {
-		console.log("HELLO")
-		helloWorldPopup = WA.ui.openPopup("Popup_tim_cinema", 'Hello world!', [{
-			label: "Close",
-			className: "primary",
-			callback: (popup) => {
-				// Close the popup when the "Close" button is pressed.
-				popup.close();
-			}
-		}]);
-	});
-
-	// Close the popup when we leave the zone.
-	WA.room.onLeaveLayer("tim_cinema").subscribe(() => {
-		helloWorldPopup.close();
-	})
-	
+		
 	// TIM Cinema
 	/*WA.room.area.onEnter("tim_cinema").subscribe(() => {
 		currentPopup = WA.ui.openPopup("Popup_tim_cinema", 'Hhlhcl, tcpt trol fsl FTE 🐶',[]);

@@ -24,7 +24,10 @@ jobs:
         run: npm install
 
       - name: "Build scripts"
-        run: npm run build
+        run: npm run build  
+      
+      - name: "Python duplicate maps"
+        run: "python map_creator.py"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3

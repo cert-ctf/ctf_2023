@@ -6,7 +6,7 @@ input_file_map_city = 'dist/map_city.tmj'
 input_file_map_radar = 'dist/map_radar.tmj'
 input_file_map_radar_inside = 'dist/map_radar_inside.tmj'
 
-output_folder="dist"
+output_folder="."
 map_count=60
 
 #Funktionen

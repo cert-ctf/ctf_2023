@@ -9,7 +9,7 @@ console.log('Script started successfully');
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
-    //console.log('Player tags: ',WA.player.tags)
+    console.log('Player tags: ',WA.player.tags)
 	
 	// Mirror show Duke
 	WA.room.area.onEnter('Mirror_Duke').subscribe(() => {		

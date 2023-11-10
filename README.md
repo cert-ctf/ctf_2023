@@ -3,7 +3,7 @@
 
 ![map](./map.png)
 
-This is a gematik TI_ctf Event Map.
+Created by Tobias Kirschke
 
 
 ## Structure

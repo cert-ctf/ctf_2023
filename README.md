@@ -2,9 +2,8 @@
 
 ![map](./map.png)
 
-This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
+This is a gematik TI_ctf Event Map.
 
-To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
 
 ## Structure
 * *public*: Static files like PDFs or audio files

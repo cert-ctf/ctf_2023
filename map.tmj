@@ -2229,6 +2229,44 @@
                  "width":2248,
                  "x":2137.33333333333,
                  "y":45.3333333333334
+                }, 
+                {
+                 "height":0,
+                 "id":146,
+                 "name":"door",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"TI_Park_Gate_Closed"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":""
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":461,
+                 "y":1247
                 }],
          "opacity":1,
          "properties":[
@@ -2354,7 +2392,7 @@
          "y":0
         }],
  "nextlayerid":14,
- "nextobjectid":146,
+ "nextobjectid":147,
  "orientation":"orthogonal",
  "properties":[
         {

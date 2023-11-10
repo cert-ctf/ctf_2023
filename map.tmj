@@ -2502,6 +2502,12 @@
                  "y":1257
                 }],
          "opacity":1,
+         "properties":[
+                {
+                 "name":"tag",
+                 "type":"string",
+                 "value":"keymaster"
+                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,

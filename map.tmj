@@ -2231,12 +2231,6 @@
                  "y":45.3333333333334
                 }],
          "opacity":1,
-         "properties":[
-                {
-                 "name":"tag",
-                 "type":"string",
-                 "value":"keymaster"
-                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,

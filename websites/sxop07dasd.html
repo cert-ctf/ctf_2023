@@ -64,13 +64,13 @@ ascii_art = '''
 flag_base = "vlhehqdfkwguhlvlhehq"  
 shift_amount = -3  
 
-# Verschlüsselung der Flaggen-Basis
+# Entlüsselung der Flaggen-Basis
 encrypted_flag_base = character_shift(flag_base, shift_amount)
 
 # Schleife zur Ausgabe
 for i in range(1, n + 1):
     if i == 0:
-        print("Flag: " + encrypted_flag_base)
+        print("Flag: " + decrypted_flag_base)
         break
     print(ascii_art)</pre>
 						</code>

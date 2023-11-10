@@ -4,7 +4,7 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
-let currentPopup: any = undefined;
+
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
@@ -61,11 +61,11 @@ WA.onInit().then(() => {
 	
 	// Bus Room
 	WA.room.area.onEnter('Bus_Room').subscribe(() => {
-		WA.room.hideLayer("Bus_Station_roof");		
+		WA.room.hideLayer("Bus_Station_Roof");		
 	})
 	
 	WA.room.area.onLeave('Bus_Room').subscribe(() => {
-		WA.room.showLayer("Bus_Station_roof");		
+		WA.room.showLayer("Bus_Station_Roof");		
 	}) 
 	
 	
@@ -90,44 +90,76 @@ WA.onInit().then(() => {
 	// Tim Bridge
 	WA.room.area.onEnter('tim_02').subscribe(() => {
 		WA.room.setTiles([		
-		  { x: 75, y: 39, tile: "tim", layer: "Stuff_6" },
-		  { x: 75, y: 38, tile: "tim_info_01a", layer: "Above_1" },
-		  { x: 75, y: 39, tile: "tim_info_01b", layer: "Above_1" },		  
+		  { x: 70, y: 60, tile: "tim", layer: "Stuff_6" },
+		  { x: 70, y: 59, tile: "tim_info_01a", layer: "Above_1" },
+		  { x: 70, y: 60, tile: "tim_info_01b", layer: "Above_1" },		  
 		]);	
 	})
 	
 	WA.room.area.onLeave('tim_02').subscribe(() => {
 		WA.room.setTiles([		
-		  { x: 75, y: 39, tile: null, layer: "Stuff_6" },
-		  { x: 75, y: 38, tile: null, layer: "Above_1" },
-		  { x: 75, y: 39, tile: null, layer: "Above_1" },		  
+		  { x: 70, y: 60, tile: null, layer: "Stuff_6" },
+		  { x: 70, y: 60, tile: null, layer: "Above_1" },
+		  { x: 70, y: 59, tile: null, layer: "Above_1" },		 	  
 		]);	
 	}) 
 	
 	
 	//POPUPS---------------------------------------------------------------------------
-		
-	// TIM Cinema
-	/*WA.room.area.onEnter("tim_cinema").subscribe(() => {
-		currentPopup = WA.ui.openPopup("Popup_tim_cinema", 'Hhlhcl, tcpt trol fsl FTE 🐶',[]);
-	});
+	let currentPopup: any = undefined;
 	
-	WA.room.area.onLeave('tim_cinema').subscribe(() => {
-		currentPopup.close();
-	}) */
+	//Popup Tim Hifi
+	WA.room.area.onEnter('tim_cinema').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_tim_cinema","⚠️📠🐶🖥️⚠️",[{
+			label: "Next",
+			className: "primary",
+			callback: () => {
+				// Close the popup when the "Close" button is pressed.
+				closePopup();
+				currentPopup = WA.ui.openPopup("Popup_tim_cinema","Der Hund möchte mir irgendetwas mitteilen, aber seine Sprache scheint chiffriert oder kryptiert zu sein...",[{
+					label: "Close",
+					className: "primary",
+					callback: () => {
+						// Close the popup when the "Close" button is pressed.
+						closePopup();
+						
+					}
+				}]);						
+			}
+		}]);
+    })
+    WA.room.area.onLeave('tim_hifi').subscribe(closePopup)
 	
-	// TIM Hifi
-	WA.room.area.onEnter("tim_hifi").subscribe(() => {
-		currentPopup = WA.ui.openPopup("Popup_tim_hifi", 'ecast kicmtk Ea ropk rsraac cqxmhieea 🐶💬📲',[]);
-	});
-	
-	WA.room.area.onLeave('tim_hifi').subscribe(() => {
-		currentPopup.close();
-	}) 
+	//Popup Tim Hifi
+	WA.room.area.onEnter('tim_hifi').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_tim_hifi","🐶💬📲",[{
+			label: "Next",
+			className: "primary",
+			callback: () => {
+				// Close the popup when the "Close" button is pressed.
+				closePopup();
+				currentPopup = WA.ui.openPopup("Popup_tim_hifi","Ich verstehe Ihn einfach nicht, aber ich habe das Gefühl, als ob er mir den TI-Messenger zeigen möchte...",[{
+					label: "Close",
+					className: "primary",
+					callback: () => {
+						// Close the popup when the "Close" button is pressed.
+						closePopup();
+						
+					}
+				}]);						
+			}
+		}]);
+    })
+    WA.room.area.onLeave('tim_hifi').subscribe(closePopup)
 	
 
 
-
+	function closePopup(){
+		if (currentPopup !== undefined) {
+			currentPopup.close();
+			currentPopup = undefined;
+		}
+	}
 
 	
 

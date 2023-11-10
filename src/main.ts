@@ -104,6 +104,23 @@ WA.onInit().then(() => {
 		]);	
 	}) 
 	
+	// Tim Bus
+	WA.room.area.onEnter('tim_bus_station').subscribe(() => {
+		WA.room.setTiles([		
+		  { x: 18, y: 71, tile: "tim_2", layer: "Stuff_6" },
+		  { x: 18, y: 70, tile: "tim_info_01a", layer: "Above_1" },
+		  { x: 18, y: 71, tile: "tim_info_01b", layer: "Above_1" },		  
+		]);	
+	})
+	
+	WA.room.area.onLeave('tim_bus_station').subscribe(() => {
+		WA.room.setTiles([		
+		  { x: 18, y: 71, tile: null, layer: "Stuff_6" },
+		  { x: 18, y: 71, tile: null, layer: "Above_1" },
+		  { x: 18, y: 70, tile: null, layer: "Above_1" },		 	  
+		]);	
+	}) 
+	
 	
 	//POPUPS---------------------------------------------------------------------------
 	let currentPopup: any = undefined;
@@ -151,6 +168,12 @@ WA.onInit().then(() => {
 		}]);
     })
     WA.room.area.onLeave('tim_hifi').subscribe(closePopup)
+	
+	//Popup Tim Bus
+	WA.room.area.onEnter('tim_bus').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_tim_bus","Wir sollten schnellstmöglich zur Kommunikationsanlage fahren...",[]);
+    })
+    WA.room.area.onLeave('tim_bus').subscribe(closePopup)
 	
 
 

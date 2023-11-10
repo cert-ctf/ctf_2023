@@ -1,4 +1,5 @@
-# WorkAdventure Map Starter Kit
+# gematik TI_ctf Die Abenteuer von KIM&TIM
+# Kapt.1: Mission (K)IMpossible
 
 ![map](./map.png)
 

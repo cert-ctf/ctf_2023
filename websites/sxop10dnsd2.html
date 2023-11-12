@@ -1,0 +1,224 @@
+<html>
+	<head>
+		<!-- Requitransparent meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<!-- CustomCSS -->
+		<link rel="stylesheet" href="./css/custom_blue.css">
+
+		<titleKonami Code</title>
+
+		<style>
+			.controller-container {
+				position: relative;
+				width: 100%;
+			}
+	
+			.controller-button {
+				border: 2px solid #000;
+				border-radius: 5px;
+				position: absolute;
+			}
+	
+			#button-a {
+				top: 55%;
+				left: 64%;
+				width: 5%;
+				height: 14%;
+				background-color: transparent;
+				border-color: transparent;
+				
+			}
+	
+			#button-b {
+				top: 55%;
+				left: 57.5%;
+				width: 5%;
+				height: 14%;
+				background-color: transparent;
+				border-color: transparent;
+			}
+	
+			#button-up {
+				top: 40%;
+				left: 32%;
+				width: 3.8%;
+				height: 10%;
+				background-color: transparent;
+				border-color: transparent;
+			}
+	
+			#button-down {
+				top: 60%;
+				left: 32%;
+				width: 3.8%;
+				height: 9%;
+				background-color: transparent;
+				border-color: transparent;
+			}
+	
+			#button-left {
+				top: 50%;
+				left: 29%;
+				width: 3.8%;
+				height: 10%;
+				background-color: transparent;
+				border-color: transparent;
+			}
+	
+			#button-right {
+				top: 50%;
+				left: 35%;
+				width: 3.8%;
+				height: 10%;
+				background-color: transparent;
+				border-color: transparent;
+			}
+	
+			#controller-img {
+				width: 50%;
+				height: auto;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>		
+		<main class="container" role="main">
+			<nav class="navbar navbar-custom" >
+				<div>
+					<h6>Die Abenteuer von KIM & TIM</h6>
+					<h4>Kapt. I – Mission (K)IMpossible</h4>					
+				</div>
+				
+				<img width="15%" src="./img/logo.svg"</img>								
+			</nav>
+		
+			<div class="container" >
+				<p><h3>Konami Code</h3></p>
+				<br>
+				
+				<div class="card" >
+					<div class="card-header" style="text-align: center;">
+						<b>Konami Code</b>
+					</div>
+					<h5 class="card-title"></h5>
+
+					<div class="card-body text-center">
+						<div id="screen" class="mt-3 text-center">
+							<img id="start" src="img/konami_start.png" class="rounded" >
+						</div>
+		
+						<div id="nes-controller" class="text-center controller-container">
+							<div class="text-center">
+								<img id="controller-img" src="img/controller.png" class="rounded mx-auto d-block" width="40%">								
+							</div>							
+			
+							<!-- Tasten als Overlay für Mausklicks -->
+							<div id="button-a" class="controller-button"></div>
+							<div id="button-b" class="controller-button"></div>
+							<div id="button-up" class="controller-button"></div>
+							<div id="button-down" class="controller-button"></div>
+							<div id="button-left" class="controller-button"></div>
+							<div id="button-right" class="controller-button"></div>
+							<!-- Füge weitere Tasten hinzu und passe die Positionen an -->
+						</div>
+						<b>Konami-Code:</b> <i>oben, oben, unten, unten, links, rechts, links, rechts, B, A</i>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh6U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+		<script>
+			// Konami-Code: oben, oben, unten, unten, links, rechts, links, rechts, B, A
+			const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown','ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];    
+			let inputBuffer = [];
+		
+			// Tasten-Overlay-Elemente
+			const buttonA = document.getElementById('button-a');
+			const buttonB = document.getElementById('button-b');
+		
+			const buttonUp = document.getElementById('button-up');
+			const buttonDown = document.getElementById('button-down');
+		
+			const buttonLeft = document.getElementById('button-left');
+			const buttonRight = document.getElementById('button-right');
+			// Füge weitere Tasten hinzu
+		
+			// Mausklicks auf Tasten behandeln
+			buttonA.addEventListener('mousedown', () => Button_Click_A());
+			buttonB.addEventListener('mousedown', () => Button_Click_B());
+		
+			buttonUp.addEventListener('mousedown', () => Button_Click_Up());
+			buttonDown.addEventListener('mousedown', () => Button_Click_Down());
+			buttonLeft.addEventListener('mousedown', () => Button_Click_Left());
+			buttonRight.addEventListener('mousedown', () => Button_Click_Right());
+			
+			// Füge weitere Tasten hinzu
+		
+			 function Button_Click_A() {
+				console.log('CLICK A');
+				handleButtonClick('KeyA')
+			}
+		
+			function Button_Click_B() {
+				console.log('CLICK B');
+				handleButtonClick('KeyB')
+			}
+		
+			function Button_Click_Up() {
+				console.log('CLICK Up');
+				handleButtonClick('ArrowUp')
+			}
+		
+			function Button_Click_Down() {
+				console.log('CLICK Down');
+				handleButtonClick('ArrowDown')
+			}
+		
+			function Button_Click_Left() {
+				console.log('CLICK Left');
+				handleButtonClick('ArrowLeft')
+			}
+		
+			function Button_Click_Right() {
+				console.log('CLICK Right');
+				handleButtonClick('ArrowRight')
+			}
+		
+			function handleButtonClick(keyCode) {
+				if (inputBuffer.length < konamiCode.length) {
+					inputBuffer.push(keyCode);
+				} else {
+					inputBuffer.shift();
+					inputBuffer.push(keyCode);
+				}
+		
+				// Überprüfe, ob die gedrückten Tasten dem Konami-Code entsprechen
+				if (inputBuffer.toString() === konamiCode.toString()) {
+					// Hier kannst du die Bildanzeige auslösen
+					// Beispiel: document.getElementById('nes-controller').innerHTML = '<img src="dein-bild.jpg" alt="Bild">';
+					document.getElementById("start").src = "img/konami_end.png";
+					document.getElementById("start").style.display = "block";
+					resetInputBuffer();
+				} else if (!konamiCode.includes(keyCode)) {
+					// Falls eine falsche Taste gedrückt wurde, lösche den Input-Buffer
+					resetInputBuffer();
+				}
+			}
+		
+			function resetInputBuffer() {
+				inputBuffer = [];
+			}
+		</script>
+	</body>
+</html>

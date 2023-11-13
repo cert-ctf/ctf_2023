@@ -30,37 +30,30 @@ document.addEventListener('mouseup', function(event) {
 });
 
 function Button_Click_A() {
-	console.log('CLICK A');
 	handleButtonClick('KeyA')
 }
 
 function Button_Click_B() {
-	console.log('CLICK B');
 	handleButtonClick('KeyB')
 }
 
 function Button_Click_Up() {
-	console.log('CLICK Up');
 	handleButtonClick('ArrowUp')
 }
 
 function Button_Click_Down() {
-	console.log('CLICK Down');
 	handleButtonClick('ArrowDown')
 }
 
 function Button_Click_Left() {
-	console.log('CLICK Left');
 	handleButtonClick('ArrowLeft')
 }
 
 function Button_Click_Right() {
-	console.log('CLICK Right');
 	handleButtonClick('ArrowRight')
 }
 
 function handleButtonClick(keyCode) {	
-	console.log(input_text)			;
 	if (input_text.length > 10)	
 	{								
 		input_text.shift();

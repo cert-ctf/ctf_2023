@@ -10,7 +10,7 @@ let canvas, width, height, ctx, backgroundImage;
                 setSize(canvas);
                 drawBackground();
             };
-            backgroundImage.src = 'kim_logo.png'; // Pfad zu Ihrem Bild hier einfügen
+            backgroundImage.src = './img/kim_logo.png'; // Pfad zu Ihrem Bild hier einfügen
             window.addEventListener("resize", windowResized);
             document.addEventListener("click", onClick);
             fireworks.push(new Firework(Math.random() * (width - 200) + 100));

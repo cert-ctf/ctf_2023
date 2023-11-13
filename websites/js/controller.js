@@ -62,27 +62,27 @@ function handleButtonClick(keyCode) {
 	switch(keyCode.toString()) {
 		case "ArrowUp":
 			input_text.push("⬆️");
-			document.getElementById("controller-img").src = "./img/controller_up.png";
+			document.getElementById("controller-img").src = "img/controller_up.png";
 			break;
 		case "ArrowDown":
 			input_text.push("⬇️");
-			document.getElementById("controller-img").src = "./img/controller_down.png";
+			document.getElementById("controller-img").src = "img/controller_down.png";
 			break;
 		case "ArrowLeft":
 			input_text.push("⬅️");
-			document.getElementById("controller-img").src = "./img/controller_left.png";
+			document.getElementById("controller-img").src = "img/controller_left.png";
 			break;
 		case "ArrowRight":
 			input_text.push("➡️");
-			document.getElementById("controller-img").src = "./img/controller_right.png";
+			document.getElementById("controller-img").src = "img/controller_right.png";
 			break;
 		case "KeyA":
 			input_text.push("🅰️");
-			document.getElementById("controller-img").src = "./img/controller_a.png";
+			document.getElementById("controller-img").src = "img/controller_a.png";
 			break;
 		case "KeyB":
 			input_text.push("🅱️");								
-			document.getElementById("controller-img").src = "./img/controller_b.png";						
+			document.getElementById("controller-img").src = "img/controller_b.png";						
 			break;
 		default:
 			// code block
@@ -99,13 +99,10 @@ function handleButtonClick(keyCode) {
 
 	// Überprüfe, ob die gedrückten Tasten dem Konami-Code entsprechen
 	if (inputBuffer.toString() === konamiCode.toString()) {
-		// Hier kannst du die Bildanzeige auslösen
-		// Beispiel: document.getElementById('nes-controller').innerHTML = '<img src="dein-bild.jpg" alt="Bild">';
 		document.getElementById("tv").src = "img/konami_end.png";
 		document.getElementById("tv").style.display = "block";
 		resetInputBuffer();
 	} else if (!konamiCode.includes(keyCode)) {
-		// Falls eine falsche Taste gedrückt wurde, lösche den Input-Buffer
 		resetInputBuffer();
 	}
 }
@@ -113,3 +110,39 @@ function handleButtonClick(keyCode) {
 function resetInputBuffer() {
 	inputBuffer = [];
 }
+
+
+
+var images = [];
+var imagePaths = ["img/controller.png", "img/controller_up.png","img/controller_down.png","img/controller_left.png","img/controller_right.png","img/controller_a.png","img/controller_b.png"];
+var progressBar = document.getElementById("loadingProgressBar");
+var progressText = document.getElementById("progressText");
+
+function preloadImages(callback) {
+	var loadedImages = 0;
+
+	function imageLoaded() {
+		loadedImages++;
+		var progress = (loadedImages / imagePaths.length) * 100;
+		progressBar.value = progress;
+		progressText.innerHTML = Math.round(progress) + "%";		
+		console.log(Math.round(progress) + "%");
+
+		if (loadedImages === imagePaths.length) {
+			// Alle Bilder wurden geladen
+			progressBar.style.display = "none"; // Verstecke die Progressbar
+			progressText.style.display = "none";
+			callback();
+		}
+	}
+
+	for (var i = 0; i < imagePaths.length; i++) {
+		images[i] = new Image();
+		images[i].onload = imageLoaded;
+		images[i].src = imagePaths[i];
+	}
+}
+
+preloadImages(function() {
+	console.log("Alle Bilder wurden geladen!");
+});

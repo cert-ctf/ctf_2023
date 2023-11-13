@@ -4,6 +4,12 @@ const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown','ArrowLeft', 
 let inputBuffer = [];
 let input_text = [];
 
+var images = [];
+var imagePaths = ["img/controller.png", "img/controller_up.png","img/controller_down.png","img/controller_left.png","img/controller_right.png","img/controller_a.png","img/controller_b.png"];
+var progressBar = document.getElementById("loadingProgressBar");
+var progressText = document.getElementById("progressText");
+var controller = document.getElementById("controller-img");
+
 // Tasten-Overlay-Elemente
 const buttonA = document.getElementById('button-a');
 const buttonB = document.getElementById('button-b');
@@ -25,8 +31,8 @@ buttonLeft.addEventListener('mousedown', () => Button_Click_Left());
 buttonRight.addEventListener('mousedown', () => Button_Click_Right());
 
 document.addEventListener('mouseup', function(event) {
-	document.getElementById("controller-img").src = "./img/controller.png";
-	document.getElementById("controller-img").style.display = "block";	
+	controller.src = images[0].src;
+	controller.style.display = "block";	
 });
 
 function Button_Click_A() {
@@ -62,33 +68,33 @@ function handleButtonClick(keyCode) {
 	switch(keyCode.toString()) {
 		case "ArrowUp":
 			input_text.push("⬆️");
-			document.getElementById("controller-img").src = "img/controller_up.png";
+			controller.src = images[1].src;
 			break;
 		case "ArrowDown":
 			input_text.push("⬇️");
-			document.getElementById("controller-img").src = "img/controller_down.png";
+			controller.src = images[2].src;
 			break;
 		case "ArrowLeft":
 			input_text.push("⬅️");
-			document.getElementById("controller-img").src = "img/controller_left.png";
+			controller.src = images[3].src;
 			break;
 		case "ArrowRight":
 			input_text.push("➡️");
-			document.getElementById("controller-img").src = "img/controller_right.png";
+			controller.src = images[4].src;
 			break;
 		case "KeyA":
 			input_text.push("🅰️");
-			document.getElementById("controller-img").src = "img/controller_a.png";
+			controller.src = images[5].src;
 			break;
 		case "KeyB":
 			input_text.push("🅱️");								
-			document.getElementById("controller-img").src = "img/controller_b.png";						
+			controller.src = images[6].src;						
 			break;
 		default:
 			// code block
 		} 			
-	document.getElementById("controller-img").style.display = "block";	
-	document.getElementById("input_text").textContent = input_text.join('');	
+		controller.style.display = "block";	
+		document.getElementById("input_text").textContent = input_text.join('');	
 
 	if (inputBuffer.length < konamiCode.length) {
 		inputBuffer.push(keyCode);
@@ -111,13 +117,6 @@ function resetInputBuffer() {
 	inputBuffer = [];
 }
 
-
-
-var images = [];
-var imagePaths = ["img/controller.png", "img/controller_up.png","img/controller_down.png","img/controller_left.png","img/controller_right.png","img/controller_a.png","img/controller_b.png"];
-var progressBar = document.getElementById("loadingProgressBar");
-var progressText = document.getElementById("progressText");
-
 function preloadImages(callback) {
 	var loadedImages = 0;
 
@@ -132,6 +131,7 @@ function preloadImages(callback) {
 			// Alle Bilder wurden geladen
 			progressBar.style.display = "none"; // Verstecke die Progressbar
 			progressText.style.display = "none";
+			document.getElementById("magic").style.display = "block";
 			callback();
 		}
 	}

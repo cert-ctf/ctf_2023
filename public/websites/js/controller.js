@@ -5,10 +5,11 @@ let inputBuffer = [];
 let input_text = [];
 
 var images = [];
-var imagePaths = ["img/controller.png", "img/controller_up.png","img/controller_down.png","img/controller_left.png","img/controller_right.png","img/controller_a.png","img/controller_b.png"];
+var imagePaths = ["img/controller.png", "img/controller_up.png","img/controller_down.png","img/controller_left.png","img/controller_right.png","img/controller_a.png","img/controller_b.png","img/konami_end.png"];
 var progressBar = document.getElementById("loadingProgressBar");
 var progressText = document.getElementById("progressText");
 var controller = document.getElementById("controller-img");
+var tv = document.getElementById("tv")
 
 // Tasten-Overlay-Elemente
 const buttonA = document.getElementById('button-a');
@@ -105,8 +106,8 @@ function handleButtonClick(keyCode) {
 
 	// Überprüfe, ob die gedrückten Tasten dem Konami-Code entsprechen
 	if (inputBuffer.toString() === konamiCode.toString()) {
-		document.getElementById("tv").src = "img/konami_end.png";
-		document.getElementById("tv").style.display = "block";
+		tv.src = images[7].src;	
+		tv.style.display = "block";
 		resetInputBuffer();
 	} else if (!konamiCode.includes(keyCode)) {
 		resetInputBuffer();

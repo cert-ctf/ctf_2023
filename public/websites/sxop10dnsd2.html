@@ -39,15 +39,21 @@
 						<p>Wir haben keine Zeit, das Spiel vollständig zu spielen. Finde die versteckte Tastenkombination, um es zu beschleunigen.</p>								
 					</div>
 					<hr>
+
+						<div id="loadingProgressBarContainer" class="text-center">
+							<div id="progressText">0%</div>		
+							<progress id="loadingProgressBar" value="0" max="100"></progress>							
+						</div>
+
 						<div id="screen" class="mt-3 text-center">
-							<img id="tv" src="img/konami_start.png" class="rounded mx-auto d-block" width="60%" draggable="false" oncontextmenu="return false;">
+							<img id="tv" src="./img/konami_start.png" class="rounded mx-auto d-block" width="60%" draggable="false" oncontextmenu="return false;">
 						</div>
 
 						
 		
 						<div id="nes-controller" class="text-center controller-container">
 							<div class="text-center">
-								<img id="controller-img" src="img/controller.png" class="rounded mx-auto d-block" draggable="false" width="40%" oncontextmenu="return false;">								
+								<img id="controller-img" src="./img/controller.png" class="rounded mx-auto d-block" draggable="false" width="40%" oncontextmenu="return false;">								
 							</div>							
 			
 							<!-- Tasten als Overlay für Mausklicks -->

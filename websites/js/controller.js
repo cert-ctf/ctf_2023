@@ -25,7 +25,7 @@ buttonLeft.addEventListener('mousedown', () => Button_Click_Left());
 buttonRight.addEventListener('mousedown', () => Button_Click_Right());
 
 document.addEventListener('mouseup', function(event) {
-	document.getElementById("controller-img").src = "img/controller.png";
+	document.getElementById("controller-img").src = "./img/controller.png";
 	document.getElementById("controller-img").style.display = "block";	
 });
 
@@ -62,27 +62,27 @@ function handleButtonClick(keyCode) {
 	switch(keyCode.toString()) {
 		case "ArrowUp":
 			input_text.push("⬆️");
-			document.getElementById("controller-img").src = "img/controller_up.png";
+			document.getElementById("controller-img").src = "./img/controller_up.png";
 			break;
 		case "ArrowDown":
 			input_text.push("⬇️");
-			document.getElementById("controller-img").src = "img/controller_down.png";
+			document.getElementById("controller-img").src = "./img/controller_down.png";
 			break;
 		case "ArrowLeft":
 			input_text.push("⬅️");
-			document.getElementById("controller-img").src = "img/controller_left.png";
+			document.getElementById("controller-img").src = "./img/controller_left.png";
 			break;
 		case "ArrowRight":
 			input_text.push("➡️");
-			document.getElementById("controller-img").src = "img/controller_right.png";
+			document.getElementById("controller-img").src = "./img/controller_right.png";
 			break;
 		case "KeyA":
 			input_text.push("🅰️");
-			document.getElementById("controller-img").src = "img/controller_a.png";
+			document.getElementById("controller-img").src = "./img/controller_a.png";
 			break;
 		case "KeyB":
 			input_text.push("🅱️");								
-			document.getElementById("controller-img").src = "img/controller_b.png";						
+			document.getElementById("controller-img").src = "./img/controller_b.png";						
 			break;
 		default:
 			// code block

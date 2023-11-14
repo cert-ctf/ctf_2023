@@ -7,7 +7,7 @@ input_file_map_radar = 'dist/map_radar.tmj'
 input_file_map_radar_inside = 'dist/map_radar_inside.tmj'
 
 output_folder="."
-map_count=60
+map_count=84
 
 #Funktionen
 def read_map(map_name):

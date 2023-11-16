@@ -4,7 +4,7 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
-
+let currentPopup: any = undefined;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
@@ -123,7 +123,58 @@ WA.onInit().then(() => {
 	
 	
 	//POPUPS---------------------------------------------------------------------------
-	let currentPopup: any = undefined;
+
+	//Popup Flat TV
+	WA.room.area.onEnter('flat_tv').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_flat_tv","Rezepte auf allen Kanälen?!",[{
+			label: "Next",
+			className: "primary",
+			callback: () => {
+				// Close the popup when the "Close" button is pressed.
+				closePopup();
+				currentPopup = WA.ui.openPopup("Popup_flat_tv","Ich sollte mal prüfen was hier vor sich geht...",[{
+					label: "Next",
+					className: "primary",
+					callback: () => {
+						// Close the popup when the "Close" button is pressed.
+						closePopup();
+						currentPopup = WA.ui.openPopup("Popup_flat_tv","Eventuell finde ich Online weitere Info's",[{
+							label: "Close",
+							className: "primary",
+							callback: () => {
+								// Close the popup when the "Close" button is pressed.
+								closePopup();
+								
+							}
+						}]);
+					}
+				}]);						
+			}
+		}]);
+    })
+    WA.room.area.onLeave('flat_tv').subscribe(closePopup)
+
+	
+	//Popup People 
+	WA.room.area.onEnter('people_info_01').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_people_info_01","Der neue Film beim Autokino gefällt mir absolut nicht!",[]);			
+    })
+    WA.room.area.onLeave('people_info_01').subscribe(closePopup)
+
+	WA.room.area.onEnter('people_info_02').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_people_info_02","Es wurde mein Rezept von letzter Woche angezeigt",[]);			
+    })
+    WA.room.area.onLeave('people_info_02').subscribe(closePopup)
+
+	WA.room.area.onEnter('people_info_03').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_people_info_03","Auf allen Kanälen laufen unsere Rezepte von der Altstadt Praxis",[]);			
+    })
+    WA.room.area.onLeave('people_info_03').subscribe(closePopup)
+
+	WA.room.area.onEnter('people_info_04').subscribe(() => {
+        currentPopup = WA.ui.openPopup("Popup_people_info_04","Es wurde ein Rezept von meinem Nachbarn gezeigt",[]);			
+    })
+    WA.room.area.onLeave('people_info_04').subscribe(closePopup)
 	
 	//Popup Tim Hifi
 	WA.room.area.onEnter('tim_cinema').subscribe(() => {
@@ -133,7 +184,7 @@ WA.onInit().then(() => {
 			callback: () => {
 				// Close the popup when the "Close" button is pressed.
 				closePopup();
-				currentPopup = WA.ui.openPopup("Popup_tim_cinema","Der Hund möchte mir irgendetwas mitteilen, aber seine Sprache scheint chiffriert oder kryptiert zu sein...",[{
+				currentPopup = WA.ui.openPopup("Popup_tim_cinema","Der Hund möchte mir irgendetwas mitteilen, aber seine Sprache scheint chiffriert zu sein...",[{
 					label: "Close",
 					className: "primary",
 					callback: () => {
@@ -145,7 +196,7 @@ WA.onInit().then(() => {
 			}
 		}]);
     })
-    WA.room.area.onLeave('tim_hifi').subscribe(closePopup)
+    WA.room.area.onLeave('tim_cinema').subscribe(closePopup)
 	
 	//Popup Tim Hifi
 	WA.room.area.onEnter('tim_hifi').subscribe(() => {
@@ -155,7 +206,7 @@ WA.onInit().then(() => {
 			callback: () => {
 				// Close the popup when the "Close" button is pressed.
 				closePopup();
-				currentPopup = WA.ui.openPopup("Popup_tim_hifi","Ich verstehe Ihn einfach nicht, aber ich habe das Gefühl, als ob er mir den TI-Messenger zeigen möchte...",[{
+				currentPopup = WA.ui.openPopup("Popup_tim_hifi","Ich verstehe ihn einfach nicht, aber ich habe das Gefühl, als ob er mir den TI-Messenger zeigen möchte...",[{
 					label: "Close",
 					className: "primary",
 					callback: () => {

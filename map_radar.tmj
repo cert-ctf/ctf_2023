@@ -1422,92 +1422,6 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":0,
-                 "id":24,
-                 "name":"Station_Door",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"closeLayer",
-                         "type":"string",
-                         "value":"Station_Door_Closed"
-                        }, 
-                        {
-                         "name":"default",
-                         "type":"bool",
-                         "value":false
-                        }, 
-                        {
-                         "name":"door",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"label",
-                         "type":"string",
-                         "value":"Open the 'Station' door"
-                        }, 
-                        {
-                         "name":"openLayer",
-                         "type":"string",
-                         "value":"Station_Door_Open"
-                        }, 
-                        {
-                         "name":"persist",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":909.53065,
-                 "y":550.405166666667
-                }, 
-                {
-                 "height":0,
-                 "id":25,
-                 "name":"Fence_Door",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"closeLayer",
-                         "type":"string",
-                         "value":"Fence_Door_Closed"
-                        }, 
-                        {
-                         "name":"default",
-                         "type":"bool",
-                         "value":false
-                        }, 
-                        {
-                         "name":"door",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"label",
-                         "type":"string",
-                         "value":"Open the 'Fence' door"
-                        }, 
-                        {
-                         "name":"openLayer",
-                         "type":"string",
-                         "value":"Fence_Door_Open"
-                        }, 
-                        {
-                         "name":"persist",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":205.24965,
-                 "y":833.125166666667
-                }, 
-                {
                  "height":106.333,
                  "id":26,
                  "name":"aufgabe_10",
@@ -1689,7 +1603,93 @@
          "draworder":"topdown",
          "id":127,
          "name":"configuration",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":28,
+                 "name":"Station_Door",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"Station_Door_Closed"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Open the 'Station' door"
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"Station_Door_Open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":912.281,
+                 "y":555.946666666666
+                }, 
+                {
+                 "height":0,
+                 "id":29,
+                 "name":"Fence_Door",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"Fence_Door_Closed"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Open the 'Fence' door"
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"Fence_Door_Open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":208,
+                 "y":838.666666666667
+                }],
          "opacity":1,
          "properties":[
                 {
@@ -1703,7 +1703,7 @@
          "y":0
         }],
  "nextlayerid":128,
- "nextobjectid":28,
+ "nextobjectid":30,
  "orientation":"orthogonal",
  "properties":[
         {

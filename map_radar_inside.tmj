@@ -562,49 +562,6 @@
                  "y":132.6665
                 }, 
                 {
-                 "height":0,
-                 "id":29,
-                 "name":"Mainframe_Door",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"closeLayer",
-                         "type":"string",
-                         "value":"Mainframe_Door_Closed"
-                        }, 
-                        {
-                         "name":"default",
-                         "type":"bool",
-                         "value":false
-                        }, 
-                        {
-                         "name":"door",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"label",
-                         "type":"string",
-                         "value":"Open the 'Mainframe' door"
-                        }, 
-                        {
-                         "name":"openLayer",
-                         "type":"string",
-                         "value":"Mainframe_Door_Open"
-                        }, 
-                        {
-                         "name":"persist",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":1101.5505,
-                 "y":386.3635
-                }, 
-                {
                  "height":82.3333,
                  "id":30,
                  "name":"Aufgabe_12",
@@ -745,7 +702,50 @@
          "draworder":"topdown",
          "id":73,
          "name":"configuration",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":33,
+                 "name":"Mainframe_Door",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"Mainframe_Door_Closed"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Open the 'Mainframe' door"
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"Mainframe_Door_Open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":1104,
+                 "y":390.666666666667
+                }],
          "opacity":1,
          "properties":[
                 {
@@ -759,7 +759,7 @@
          "y":0
         }],
  "nextlayerid":74,
- "nextobjectid":33,
+ "nextobjectid":34,
  "orientation":"orthogonal",
  "properties":[
         {

@@ -711,49 +711,6 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":0,
-                 "id":34,
-                 "name":"Flat_Door",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"closeLayer",
-                         "type":"string",
-                         "value":"Flat_Door_Closed"
-                        }, 
-                        {
-                         "name":"default",
-                         "type":"bool",
-                         "value":false
-                        }, 
-                        {
-                         "name":"door",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"label",
-                         "type":"string",
-                         "value":"Open the 'Flat' room door"
-                        }, 
-                        {
-                         "name":"openLayer",
-                         "type":"string",
-                         "value":"Flat_Door_Open"
-                        }, 
-                        {
-                         "name":"persist",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":560.13445,
-                 "y":221.485
-                }, 
-                {
                  "height":43.5,
                  "id":35,
                  "name":"Mirror_Duke",
@@ -985,7 +942,50 @@
          "draworder":"topdown",
          "id":85,
          "name":"configuration",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":41,
+                 "name":"Flat_Door",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"Flat_Door_Closed"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Open the 'Flat' room door"
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"Flat_Door_Open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":560,
+                 "y":220
+                }],
          "opacity":1,
          "properties":[
                 {
@@ -999,7 +999,7 @@
          "y":0
         }],
  "nextlayerid":86,
- "nextobjectid":41,
+ "nextobjectid":42,
  "orientation":"orthogonal",
  "properties":[
         {

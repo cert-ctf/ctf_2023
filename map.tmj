@@ -1277,23 +1277,6 @@
                 }, 
                 {
                  "height":32,
-                 "id":84,
-                 "name":"team_40",
-                 "properties":[
-                        {
-                         "name":"exitUrl",
-                         "type":"string",
-                         "value":"https:\/\/play.workadventu.re\/@\/gematik\/kim_ti\/team_40_flat"
-                        }],
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
-                 "width":32,
-                 "x":832.5,
-                 "y":730.666666666667
-                }, 
-                {
-                 "height":32,
                  "id":85,
                  "name":"team_41",
                  "properties":[
@@ -2174,8 +2157,7 @@
                  "width":188.666666666667,
                  "x":1918,
                  "y":365.666666666667
-                },
-            
+                }, 
                 {
                  "height":64,
                  "id":136,
@@ -2197,7 +2179,8 @@
                  "width":64,
                  "x":1120.66666666667,
                  "y":2720.33
-                }, 
+                },
+            
                 {
                  "height":64,
                  "id":137,
@@ -2771,6 +2754,49 @@
                  "width":32,
                  "x":1152.125,
                  "y":251.25
+                }, 
+                {
+                 "height":0,
+                 "id":172,
+                 "name":"Gate",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"closeLayer",
+                         "type":"string",
+                         "value":"TI_Park_Gate_Closed"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
+                         "name":"door",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Open the 'Gate' door"
+                        }, 
+                        {
+                         "name":"openLayer",
+                         "type":"string",
+                         "value":"TI_Park_Gate_Open"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":463.666666666667,
+                 "y":1380.33333333333
                 }],
          "opacity":1,
          "properties":[
@@ -2900,8 +2926,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":19,
- "nextobjectid":172,
+ "nextlayerid":20,
+ "nextobjectid":173,
  "orientation":"orthogonal",
  "properties":[
         {

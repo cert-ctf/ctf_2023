@@ -1983,28 +1983,6 @@
                  "y":2267.66665
                 }, 
                 {
-                 "height":381.333366666667,
-                 "id":127,
-                 "name":"Jitsi_Stage",
-                 "properties":[
-                        {
-                         "name":"jitsiRoom",
-                         "type":"string",
-                         "value":"stage"
-                        }, 
-                        {
-                         "name":"jitsiRoomAdminTag",
-                         "type":"string",
-                         "value":"speaker"
-                        }],
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
-                 "width":729.333,
-                 "x":739.3335,
-                 "y":1441.33331666667
-                }, 
-                {
                  "height":53,
                  "id":128,
                  "name":"Web_HTW",
@@ -2179,8 +2157,7 @@
                  "width":64,
                  "x":1120.66666666667,
                  "y":2720.33
-                },
-            
+                }, 
                 {
                  "height":64,
                  "id":137,
@@ -2202,7 +2179,8 @@
                  "width":64,
                  "x":1023.99998333333,
                  "y":2720.33333333333
-                }, 
+                },
+            
                 {
                  "height":291.833333333333,
                  "id":138,
@@ -2317,11 +2295,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"coffee"
-                        }, 
-                        {
-                         "name":"jitsiRoomAdminTag",
-                         "type":"string",
-                         "value":"speaker"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2754,6 +2727,168 @@
                  "width":32,
                  "x":1152.125,
                  "y":251.25
+                }, 
+                {
+                 "height":267.333,
+                 "id":175,
+                 "name":"Jitsi_ibm",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"stage"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":449.333,
+                 "x":1445.3335,
+                 "y":2037.3335
+                }, 
+                {
+                 "height":267.333,
+                 "id":176,
+                 "name":"Jitsi_htw",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"stage"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":449.333,
+                 "x":313.3335,
+                 "y":2032.3335
+                }, 
+                {
+                 "height":397.333,
+                 "id":177,
+                 "name":"Jitsi_Stage",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"stage"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":731.333,
+                 "x":739.3335,
+                 "y":1432.3335
+                }, 
+                {
+                 "height":267.333,
+                 "id":178,
+                 "name":"Jitsi_kim",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"stage"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":449.333,
+                 "x":311.3335,
+                 "y":2360.3335
+                }, 
+                {
+                 "height":267.333,
+                 "id":179,
+                 "name":"Jitsi_sap",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"stage"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":449.333,
+                 "x":1443.3335,
+                 "y":2356.3335
+                }, 
+                {
+                 "height":267.333,
+                 "id":180,
+                 "name":"Jitsi_gematik",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"stage"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":449.333,
+                 "x":313.3335,
+                 "y":2680.3335
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2938,7 +3073,7 @@
          "y":0
         }],
  "nextlayerid":22,
- "nextobjectid":175,
+ "nextobjectid":181,
  "orientation":"orthogonal",
  "properties":[
         {

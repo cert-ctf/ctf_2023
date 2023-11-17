@@ -2899,6 +2899,23 @@
                  "width":449.333,
                  "x":313.3335,
                  "y":2680.3335
+                }, 
+                {
+                 "height":32,
+                 "id":181,
+                 "name":"team_40",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"https:\/\/play.workadventu.re\/@\/gematik\/kim_ti\/team_40_flat"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":32,
+                 "x":832.666666666667,
+                 "y":730
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3083,7 +3100,7 @@
          "y":0
         }],
  "nextlayerid":22,
- "nextobjectid":181,
+ "nextobjectid":182,
  "orientation":"orthogonal",
  "properties":[
         {

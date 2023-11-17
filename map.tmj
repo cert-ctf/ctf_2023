@@ -1952,6 +1952,11 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1974,6 +1979,11 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2736,7 +2746,7 @@
                         {
                          "name":"jitsiRoom",
                          "type":"string",
-                         "value":"stage"
+                         "value":"ibm"
                         }, 
                         {
                          "name":"jitsiRoomAdminTag",
@@ -2763,7 +2773,7 @@
                         {
                          "name":"jitsiRoom",
                          "type":"string",
-                         "value":"stage"
+                         "value":"htw"
                         }, 
                         {
                          "name":"jitsiRoomAdminTag",
@@ -2780,7 +2790,7 @@
                  "visible":true,
                  "width":449.333,
                  "x":313.3335,
-                 "y":2032.3335
+                 "y":2034.3335
                 }, 
                 {
                  "height":397.333,
@@ -2817,7 +2827,7 @@
                         {
                          "name":"jitsiRoom",
                          "type":"string",
-                         "value":"stage"
+                         "value":"kim"
                         }, 
                         {
                          "name":"jitsiRoomAdminTag",
@@ -2844,7 +2854,7 @@
                         {
                          "name":"jitsiRoom",
                          "type":"string",
-                         "value":"stage"
+                         "value":"sap"
                         }, 
                         {
                          "name":"jitsiRoomAdminTag",
@@ -2871,7 +2881,7 @@
                         {
                          "name":"jitsiRoom",
                          "type":"string",
-                         "value":"stage"
+                         "value":"gematik"
                         }, 
                         {
                          "name":"jitsiRoomAdminTag",

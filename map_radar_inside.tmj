@@ -595,7 +595,7 @@
                         {
                          "name":"persist",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"variable",

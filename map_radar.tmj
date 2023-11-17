@@ -1684,8 +1684,25 @@
          "visible":true,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":127,
+         "name":"configuration",
+         "objects":[],
+         "opacity":1,
+         "properties":[
+                {
+                 "name":"tag",
+                 "type":"string",
+                 "value":"keymaster"
+                }],
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":126,
+ "nextlayerid":128,
  "nextobjectid":28,
  "orientation":"orthogonal",
  "properties":[

@@ -99,9 +99,9 @@
                  "value":"1684"
                 }, 
                 {
-                 "name":"doorVariable",
+                 "name":"Door1Variable",
                  "type":"string",
-                 "value":"Mainframe_Door"
+                 "value":"Mainframe_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -489,7 +489,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":67,
-         "name":"Mainframe_Door_Closed",
+         "name":"Mainframe_Door1_Closed",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -521,7 +521,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":68,
-         "name":"Mainframe_Door_Open",
+         "name":"Mainframe_Door1_Open",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -706,13 +706,13 @@
                 {
                  "height":0,
                  "id":33,
-                 "name":"Mainframe_Door",
+                 "name":"Mainframe_Door1",
                  "point":true,
                  "properties":[
                         {
                          "name":"closeLayer",
                          "type":"string",
-                         "value":"Mainframe_Door_Closed"
+                         "value":"Mainframe_Door1_Closed"
                         }, 
                         {
                          "name":"default",
@@ -720,19 +720,19 @@
                          "value":false
                         }, 
                         {
-                         "name":"door",
+                         "name":"Door1",
                          "type":"bool",
                          "value":true
                         }, 
                         {
                          "name":"label",
                          "type":"string",
-                         "value":"Open the 'Mainframe' door"
+                         "value":"Open the 'Mainframe' Door1"
                         }, 
                         {
                          "name":"openLayer",
                          "type":"string",
-                         "value":"Mainframe_Door_Open"
+                         "value":"Mainframe_Door1_Open"
                         }, 
                         {
                          "name":"persist",

@@ -37,7 +37,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Flat_Door"
+                 "value":"Flat_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -665,7 +665,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":78,
-         "name":"Flat_Door_Closed",
+         "name":"Flat_Door1_Closed",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -697,7 +697,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":77,
-         "name":"Flat_Door_Open",
+         "name":"Flat_Door1_Open",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -946,13 +946,13 @@
                 {
                  "height":0,
                  "id":41,
-                 "name":"Flat_Door",
+                 "name":"Flat_Door1",
                  "point":true,
                  "properties":[
                         {
                          "name":"closeLayer",
                          "type":"string",
-                         "value":"Flat_Door_Closed"
+                         "value":"Flat_Door1_Closed"
                         }, 
                         {
                          "name":"default",
@@ -972,7 +972,7 @@
                         {
                          "name":"openLayer",
                          "type":"string",
-                         "value":"Flat_Door_Open"
+                         "value":"Flat_Door1_Open"
                         }, 
                         {
                          "name":"persist",

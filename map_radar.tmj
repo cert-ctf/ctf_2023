@@ -388,9 +388,9 @@
                  "value":"1356"
                 }, 
                 {
-                 "name":"doorVariable",
+                 "name":"Door1Variable",
                  "type":"string",
-                 "value":"Station_Door"
+                 "value":"Station_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -461,9 +461,9 @@
                  "value":"1764"
                 }, 
                 {
-                 "name":"doorVariable",
+                 "name":"Door1Variable",
                  "type":"string",
-                 "value":"Fence_Door"
+                 "value":"Fence_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1025,7 +1025,7 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  "height":50,
                  "id":63,
-                 "name":"doors",
+                 "name":"Door1s",
                  "opacity":1,
                  "type":"tilelayer",
                  "visible":true,
@@ -1164,7 +1164,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":50,
          "id":115,
-         "name":"Station_Door_Closed",
+         "name":"Station_Door1_Closed",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -1225,7 +1225,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":50,
          "id":114,
-         "name":"Station_Door_Open",
+         "name":"Station_Door1_Open",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -1286,7 +1286,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":50,
          "id":121,
-         "name":"Fence_Door_Closed",
+         "name":"Fence_Door1_Closed",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -1347,7 +1347,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":50,
          "id":120,
-         "name":"Fence_Door_Open",
+         "name":"Fence_Door1_Open",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -1607,13 +1607,13 @@
                 {
                  "height":0,
                  "id":28,
-                 "name":"Station_Door",
+                 "name":"Station_Door1",
                  "point":true,
                  "properties":[
                         {
                          "name":"closeLayer",
                          "type":"string",
-                         "value":"Station_Door_Closed"
+                         "value":"Station_Door1_Closed"
                         }, 
                         {
                          "name":"default",
@@ -1621,19 +1621,19 @@
                          "value":false
                         }, 
                         {
-                         "name":"door",
+                         "name":"Door1",
                          "type":"bool",
                          "value":true
                         }, 
                         {
                          "name":"label",
                          "type":"string",
-                         "value":"Open the 'Station' door"
+                         "value":"Open the 'Station' Door1"
                         }, 
                         {
                          "name":"openLayer",
                          "type":"string",
-                         "value":"Station_Door_Open"
+                         "value":"Station_Door1_Open"
                         }, 
                         {
                          "name":"persist",
@@ -1650,13 +1650,13 @@
                 {
                  "height":0,
                  "id":29,
-                 "name":"Fence_Door",
+                 "name":"Fence_Door1",
                  "point":true,
                  "properties":[
                         {
                          "name":"closeLayer",
                          "type":"string",
-                         "value":"Fence_Door_Closed"
+                         "value":"Fence_Door1_Closed"
                         }, 
                         {
                          "name":"default",
@@ -1664,19 +1664,19 @@
                          "value":false
                         }, 
                         {
-                         "name":"door",
+                         "name":"Door1",
                          "type":"bool",
                          "value":true
                         }, 
                         {
                          "name":"label",
                          "type":"string",
-                         "value":"Open the 'Fence' door"
+                         "value":"Open the 'Fence' Door1"
                         }, 
                         {
                          "name":"openLayer",
                          "type":"string",
-                         "value":"Fence_Door_Open"
+                         "value":"Fence_Door1_Open"
                         }, 
                         {
                          "name":"persist",

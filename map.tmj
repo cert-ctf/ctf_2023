@@ -1952,11 +1952,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1979,11 +1974,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2752,11 +2742,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2779,11 +2764,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2806,11 +2786,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2833,11 +2808,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2860,11 +2830,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -2887,11 +2852,6 @@
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
                          "value":"speaker"
-                        }, 
-                        {
-                         "name":"jitsiUrl",
-                         "type":"string",
-                         "value":"jitsictf.gematik.de"
                         }],
                  "rotation":0,
                  "type":"area",

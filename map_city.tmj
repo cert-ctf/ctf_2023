@@ -114,7 +114,7 @@
                  "value":"4531"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Bus_Door1"
                 }],
@@ -236,7 +236,7 @@
                  "value":"3018"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Bus_Station_Door1"
                 }],
@@ -358,7 +358,7 @@
                  "value":"7837"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Fax_Door1"
                 }],
@@ -480,7 +480,7 @@
                  "value":"7486"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Praxis_2_Door1"
                 }],
@@ -602,7 +602,7 @@
                  "value":"6482"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Bridge_2_Door1"
                 }],
@@ -724,7 +724,7 @@
                  "value":"1200"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Bridge_1_Door1"
                 }],
@@ -846,7 +846,7 @@
                  "value":"8535"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Hifi_Door1"
                 }],

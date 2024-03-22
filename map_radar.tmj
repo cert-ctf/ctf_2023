@@ -388,7 +388,7 @@
                  "value":"1356"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Station_Door1"
                 }],
@@ -461,7 +461,7 @@
                  "value":"1764"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Fence_Door1"
                 }],

@@ -99,7 +99,7 @@
                  "value":"1684"
                 }, 
                 {
-                 "name":"Door1Variable",
+                 "name":"doorVariable",
                  "type":"string",
                  "value":"Mainframe_Door1"
                 }],

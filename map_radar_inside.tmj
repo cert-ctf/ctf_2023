@@ -1,4 +1,4 @@
-{ "compressionlevel":-1, 
+{ "compressionlevel":-1,
  "height":21,
  "infinite":false,
  "layers":[
@@ -101,7 +101,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Mainframe_Door"
+                 "value":"Mainframe_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -706,7 +706,7 @@
                 {
                  "height":0,
                  "id":33,
-                 "name":"Mainframe_Door",
+                 "name":"Mainframe_Door1",
                  "point":true,
                  "properties":[
                         {

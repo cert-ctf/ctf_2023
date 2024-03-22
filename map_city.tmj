@@ -1,4 +1,4 @@
-{ "compressionlevel":-1, 
+{ "compressionlevel":-1,
  "height":100,
  "infinite":false,
  "layers":[
@@ -116,7 +116,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Bus_Door"
+                 "value":"Bus_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -238,7 +238,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Bus_Station_Door"
+                 "value":"Bus_Station_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -360,7 +360,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Fax_Door"
+                 "value":"Fax_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -482,7 +482,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Praxis_2_Door"
+                 "value":"Praxis_2_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -593,7 +593,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":100,
          "id":186,
-         "name":"Bridge_2_Code",
+         "name":"Bridge_2_Code1",
          "opacity":1,
          "properties":[
                 {
@@ -604,7 +604,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Bridge_2_Door"
+                 "value":"Bridge_2_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -726,7 +726,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Bridge_1_Door"
+                 "value":"Bridge_1_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -848,7 +848,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Hifi_Door"
+                 "value":"Hifi_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -4464,7 +4464,7 @@
                 {
                  "height":0,
                  "id":147,
-                 "name":"Hifi_Door",
+                 "name":"Hifi_Door1",
                  "point":true,
                  "properties":[
                         {
@@ -4507,7 +4507,7 @@
                 {
                  "height":0,
                  "id":148,
-                 "name":"Bridge_1_Door",
+                 "name":"Bridge_1_Door1",
                  "point":true,
                  "properties":[
                         {
@@ -4550,7 +4550,7 @@
                 {
                  "height":0,
                  "id":149,
-                 "name":"Bridge_2_Door",
+                 "name":"Bridge_2_Door1",
                  "point":true,
                  "properties":[
                         {
@@ -4593,7 +4593,7 @@
                 {
                  "height":0,
                  "id":150,
-                 "name":"Praxis_2_Door",
+                 "name":"Praxis_2_Door1",
                  "point":true,
                  "properties":[
                         {
@@ -4636,7 +4636,7 @@
                 {
                  "height":0,
                  "id":151,
-                 "name":"Fax_Door",
+                 "name":"Fax_Door1",
                  "point":true,
                  "properties":[
                         {
@@ -4679,7 +4679,7 @@
                 {
                  "height":0,
                  "id":152,
-                 "name":"Bus_Station_Door",
+                 "name":"Bus_Station_Door1",
                  "point":true,
                  "properties":[
                         {
@@ -4722,7 +4722,7 @@
                 {
                  "height":0,
                  "id":153,
-                 "name":"Bus_Door",
+                 "name":"Bus_Door1",
                  "point":true,
                  "properties":[
                         {

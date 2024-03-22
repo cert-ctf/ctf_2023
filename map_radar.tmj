@@ -1,4 +1,4 @@
-{ "compressionlevel":-1, 
+{ "compressionlevel":-1,
  "height":50,
  "infinite":false,
  "layers":[
@@ -390,7 +390,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Station_Door"
+                 "value":"Station_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -463,7 +463,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Fence_Door"
+                 "value":"Fence_Door1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1607,7 +1607,7 @@
                 {
                  "height":0,
                  "id":28,
-                 "name":"Station_Door",
+                 "name":"Station_Door1",
                  "point":true,
                  "properties":[
                         {
@@ -1650,7 +1650,7 @@
                 {
                  "height":0,
                  "id":29,
-                 "name":"Fence_Door",
+                 "name":"Fence_Door1",
                  "point":true,
                  "properties":[
                         {

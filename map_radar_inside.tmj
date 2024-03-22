@@ -720,7 +720,7 @@
                          "value":false
                         }, 
                         {
-                         "name":"Door1",
+                         "name":"door",
                          "type":"bool",
                          "value":true
                         }, 

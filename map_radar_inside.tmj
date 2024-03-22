@@ -101,7 +101,7 @@
                 {
                  "name":"doorVariable",
                  "type":"string",
-                 "value":"Mainframe_Door1"
+                 "value":"Mainframe_Door"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -489,7 +489,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":67,
-         "name":"Mainframe_Door1_Closed",
+         "name":"Mainframe_Door_Closed",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -521,7 +521,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":68,
-         "name":"Mainframe_Door1_Open",
+         "name":"Mainframe_Door_Open",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -706,13 +706,13 @@
                 {
                  "height":0,
                  "id":33,
-                 "name":"Mainframe_Door1",
+                 "name":"Mainframe_Door",
                  "point":true,
                  "properties":[
                         {
                          "name":"closeLayer",
                          "type":"string",
-                         "value":"Mainframe_Door1_Closed"
+                         "value":"Mainframe_Door_Closed"
                         }, 
                         {
                          "name":"default",
@@ -727,12 +727,12 @@
                         {
                          "name":"label",
                          "type":"string",
-                         "value":"Open the 'Mainframe' Door1"
+                         "value":"Open the 'Mainframe' door"
                         }, 
                         {
                          "name":"openLayer",
                          "type":"string",
-                         "value":"Mainframe_Door1_Open"
+                         "value":"Mainframe_Door_Open"
                         }, 
                         {
                          "name":"persist",
